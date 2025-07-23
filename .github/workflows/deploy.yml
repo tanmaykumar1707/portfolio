@@ -19,8 +19,8 @@ jobs:
 
       - name: Stop and Remove Existing Container (if running)
         run: |
-          docker stop portfolio-app || true
-          docker rm portfolio-app || true
+          docker stop portfolio-container || true
+          docker rm portfolio-container || true
 
       - name: Run New Container
         run: |
