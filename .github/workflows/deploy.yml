@@ -1,26 +1,31 @@
-name: Deploy Resume to Self-Hosted Server
+name: Build and Deploy
 
 on:
   push:
-    branches: [main]  # or your deployment branch
+    branches:
+      - main
 
 jobs:
-  build-and-deploy:
+  build-deploy:
     runs-on: self-hosted
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Stop old container
+      - name: Build Docker Image
         run: |
-          docker stop portfolio-container || true
-          docker rm portfolio-container || true
+          docker build -t portfolio-app:latest -f docker/Dockerfile .
 
-      - name: Build Docker image
+      - name: Stop and Remove Existing Container (if running)
         run: |
-          docker build -t portfolio-app .
+          docker stop portfolio-app || true
+          docker rm portfolio-app || true
 
-      - name: Run new container on port 1707
+      - name: Run New Container
         run: |
-          docker run -d --name portfolio-container -p 1707:80 portfolio-app
+          docker run -d \
+            --name portfolio-container \
+            -p 1707:80 \
+            portfolio-app:latest
+
