@@ -120,17 +120,18 @@ function App() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10 pt-16 sm:pt-0">
           <div className="animate-fade-in-up">
             {/* Profile Image Placeholder */}
-            <div className="mb-8 flex justify-center">
+            <br/>   <br/>
+            <div className="mb-8 ma-8 flex justify-center">
               <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm border-4 border-blue-500/30 flex items-center justify-center overflow-hidden group hover:scale-105 transition-all duration-300">
                 {/* Placeholder content - replace with your image */}
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-2 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center">
                     <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">TK</span>
                   </div>
                   <p className="text-xs text-gray-400">Profile Photo</p>
-                </div>
+                </div> */}
                 {/* When you add your image, replace the above div with: */}
-                {/* <img src="/path-to-your-image.jpg" alt="Tanmay Kumar" className="w-full h-full object-cover" /> */}
+                <img src="/myphoto.png" alt="Tanmay Kumar" className="m-6 w-full h-full object-cover" />
               </div>
             </div>
             
