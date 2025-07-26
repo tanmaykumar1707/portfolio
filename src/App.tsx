@@ -120,7 +120,7 @@ function App() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10 pt-16 sm:pt-0">
           <div className="animate-fade-in-up">
             {/* Profile Image Placeholder */}
-            <br/>   <br/>
+            <br/>   <br/>  <br/>   <br/>  <br/>  
             <div className="mb-8 ma-8 flex justify-center">
               <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm border-4 border-blue-500/30 flex items-center justify-center overflow-hidden group hover:scale-105 transition-all duration-300">
                 {/* Placeholder content - replace with your image */}
@@ -135,6 +135,8 @@ function App() {
               </div>
             </div>
             
+
+
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-gradient">
               Tanmay Kumar
             </h1>
