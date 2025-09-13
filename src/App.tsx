@@ -200,8 +200,8 @@ function App() {
                 <div className="text-sm sm:text-base text-gray-300">Years Experience</div>
               </div>
               <div className="text-center p-4 sm:p-6 bg-gradient-to-br from-green-600/20 to-blue-600/20 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:scale-105 transition-all duration-300">
-                <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-2">50+</div>
-                <div className="text-sm sm:text-base text-gray-300">Projects Completed</div>
+                <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-2">MCA</div>
+                <div className="text-sm sm:text-base text-gray-300">NIT, Agartala</div>
               </div>
               <div className="text-center p-4 sm:p-6 bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:scale-105 transition-all duration-300">
                 <div className="text-2xl sm:text-3xl font-bold text-purple-400 mb-2">10+</div>
@@ -296,7 +296,7 @@ function App() {
                   <p className="text-lg sm:text-xl text-gray-300 mb-2">Deloitte USI, Bangalore</p>
                   <div className="flex items-center gap-2 text-sm sm:text-base text-gray-400">
                     <Calendar size={16} />
-                    <span>July 2021 – Nov 2024</span>
+                    <span>Nov 2024 – Present</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm sm:text-base text-gray-400 mt-1">
                     <Briefcase size={16} />
@@ -307,19 +307,24 @@ function App() {
                 <div className="space-y-4">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="p-4 bg-slate-800/50 rounded-lg">
-                      <h4 className="font-semibold text-blue-400 mb-2">Key Achievements</h4>
+                      <h4 className="font-semibold text-blue-400 mb-2">Key Details</h4>
                       <ul className="text-gray-300 space-y-1 text-sm">
-                        <li>• Migration from Monolithic to Microservices Architecture</li>
-                        <li>• RESTful and GraphQL API development</li>
-                        <li>• Implemented fault tolerance patterns</li>
+                        <li>• <b>Migration:</b> Monolith → Microservices</li> 
+                        <li>• RESTful and GraphQL API development</li> 
+                        <li>• Strangler Fig pattern with Shim & CDC</li> 
+                        <li>• Implementation of fault tolerance patterns</li>
                       </ul>
                     </div>
                     <div className="p-4 bg-slate-800/50 rounded-lg">
                       <h4 className="font-semibold text-purple-400 mb-2">Technologies</h4>
                       <ul className="text-gray-300 space-y-1 text-sm">
-                        <li>• Java 17, Spring Boot 3+</li>
-                        <li>• AWS (EC2, ECS), Docker</li>
-                        <li>• Prometheus, Grafana, Splunk</li>
+                         <li> • <b>Backend:</b> Java 17, Spring Boot 3, GraphQL/REST</li> 
+                          <li>• <b>Tools:</b> IntelliJ (debugging), GitHub, Docker, Linux</li> 
+                          <li>• <b>Observability & Tracing:</b> Honeycomb, Splunk, Grafana (Tempo, Prometheus, Loki, MinIO)</li> 
+                          <li>• <b>Cloud (AWS):</b> EC2, ECS, S3, Lambda, CloudWatch, IAM, CloudFormation, Secrets, Aurora, DynamoDB, Cognito</li> 
+                          <li>• <b>Data:</b> Oracle, MySQL, PostgreSQL, Caching</li> 
+                          <li>• <b>CI/CD:</b> GitHub Actions, Jenkins</li> 
+                          <li>• <b>API Federation:</b> Apollo Supergraph</li>
                       </ul>
                     </div>
                   </div>
@@ -349,19 +354,21 @@ function App() {
                 <div className="space-y-4">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="p-4 bg-slate-800/50 rounded-lg">
-                      <h4 className="font-semibold text-purple-400 mb-2">Key Achievements</h4>
+                      <h4 className="font-semibold text-purple-400 mb-2">Key Details</h4>
                       <ul className="text-gray-300 space-y-1 text-sm">
-                        <li>• Server migration & upgrade - 30% performance boost</li>
-                        <li>• Scalable microservices development</li>
+
+                        <li>• Enhancement and Adding new features along with Scalable microservices development</li>
                         <li>• Process automation and internal tooling</li>
+                        <li>• Server migration & upgrade - 30% performance boost</li>
                       </ul>
                     </div>
                     <div className="p-4 bg-slate-800/50 rounded-lg">
                       <h4 className="font-semibold text-green-400 mb-2">Technologies</h4>
                       <ul className="text-gray-300 space-y-1 text-sm">
-                        <li>• Spring Boot, Spring Cloud</li>
-                        <li>• AWS, Linux, Docker</li>
-                        <li>• ReactJS, WebSphere, Nginx</li>
+                        <li>• Java 8, Spring Boot</li>
+                        <li>• DB : Oracle / MySql</li>
+                        <li>• Linux & Shell Scripting</li>
+                        <li>• AWS EC2, Api Gateway, Lambda Cognito, DynamoDb, S3</li>
                       </ul>
                     </div>
                   </div>
@@ -413,9 +420,8 @@ function App() {
               <h3 className="text-2xl font-bold text-purple-400 mb-6">Hands-on</h3>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  'ReactJS', 'Python', 'MongoDB', 'RabbitMQ', 
-                  'Kubernetes', 'HTML/CSS', 'JavaScript', 'Docker'
-                ].map((tech) => (
+                  'ReactJS', 'Python', 'MongoDB', 'RabbitMQ'
+                  ].map((tech) => (
                   <div 
                     key={tech} 
                     className="p-4 bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-lg backdrop-blur-sm border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 text-center"
@@ -471,7 +477,7 @@ function App() {
                 </div>
                 
                 <div className="flex flex-wrap gap-2">
-                  {['Spring Boot', 'JWT', 'RabbitMQ', 'MySQL', 'ReactJS'].map((tech) => (
+                  {['Spring Boot 3', 'JWT', 'ReactJs', 'MySQL', 'Grafana', 'Minio' ].map((tech) => (
                     <span key={tech} className="px-3 py-1 bg-blue-600/20 rounded-full text-xs text-blue-300">
                       {tech}
                     </span>
